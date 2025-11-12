@@ -14,7 +14,7 @@ colors = {
 
 img = cv2.imread('assets.png')
 if img is None:
-    raise ValueError("Gambar tidak ditemukan. Pastikan path 'input.jpg' benar.")
+    raise ValueError("Gambar tidak ditemukan. Pastikan path benar.")
 
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 output = img.copy()
@@ -72,3 +72,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 cv2.imwrite("output_detected.jpg", output)
+
